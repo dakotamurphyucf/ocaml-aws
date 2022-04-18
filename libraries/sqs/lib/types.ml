@@ -69,9 +69,8 @@ module MessageAttributeValue = struct
             "DataType"
             (Util.option_bind (Xml.member "DataType" xml) String.parse)
       }
+  let to_query_list v =
 
-  let to_query v =
-    Query.List
       (Util.list_filter_opt
          [ Some (Query.Pair ("DataType", String.to_query v.data_type))
          ; Some (Query.Pair ("BinaryListValue", BinaryList.to_query v.binary_list_values))
@@ -81,6 +80,9 @@ module MessageAttributeValue = struct
          ; Util.option_map v.string_value (fun f ->
                Query.Pair ("StringValue", String.to_query f))
          ])
+  let to_query v =
+    Query.List
+      (to_query_list v)
 
   let to_json v =
     `Assoc
@@ -249,8 +251,19 @@ module MessageBodyAttributeMap = struct
 
   let parse xml = None
 
+  let to_query_hashtbl key_to_str to_query tbl =
+    Query.List (
+      let _, res = Hashtbl.fold (
+        fun k v (i, acc) -> 
+          let atts =List.map (fun v -> Query.Pair (string_of_int i, Query.Pair ("Value", v)) )(to_query v) in
+           let atts = Query.Pair ( string_of_int i, Query.Pair ("Name", Query.Value (Some (key_to_str k))) ):: atts in
+          i + 1 ,  atts @ acc) tbl (1, [])
+        in 
+        List.map (fun v -> Query.Pair ("MessageAttribute", v)) res
+      )
+
   let to_query v =
-    Query.to_query_hashtbl String.to_string MessageAttributeValue.to_query v
+    to_query_hashtbl String.to_string MessageAttributeValue.to_query_list v
 
   let to_json v =
     `Assoc
@@ -776,7 +789,7 @@ module Message = struct
     Query.List
       (Util.list_filter_opt
          [ Util.option_map v.message_attributes (fun f ->
-               Query.Pair ("MessageAttribute", MessageBodyAttributeMap.to_query f))
+              MessageBodyAttributeMap.to_query f)
          ; Util.option_map v.m_d5_of_message_attributes (fun f ->
                Query.Pair ("MD5OfMessageAttributes", String.to_query f))
          ; Util.option_map v.attributes (fun f ->
@@ -1958,7 +1971,7 @@ module SendMessageRequest = struct
                Query.Pair
                  ("MessageSystemAttribute", MessageBodySystemAttributeMap.to_query f))
          ; Util.option_map v.message_attributes (fun f ->
-               Query.Pair ("MessageAttribute", MessageBodyAttributeMap.to_query f))
+                MessageBodyAttributeMap.to_query f)
          ; Util.option_map v.delay_seconds (fun f ->
                Query.Pair ("DelaySeconds", Integer.to_query f))
          ; Some (Query.Pair ("MessageBody", String.to_query v.message_body))
