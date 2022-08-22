@@ -1,3 +1,10 @@
+Unreleased
+----------
+- Add KMS support (#118 @zbaylin)
+- Drop dependency on ocaml-migrate-parsetree and use ocaml-compiler-libs (#126 @Nymphium)
+- Fix codegen to handle recursive modules (#127 @Nymphium)
+- Update SSM service definition (#91 @tmcgilchrist)
+
 1.2.1
 ----------
 - Increase lower bound on OCaml to 4.08. https://github.com/inhabitedtype/ocaml-aws/pull/104

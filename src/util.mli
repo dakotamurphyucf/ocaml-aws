@@ -31,9 +31,6 @@
     POSSIBILITY OF SUCH DAMAGE.
   ----------------------------------------------------------------------------*)
 
-open Migrate_parsetree
-open Ast_404
-
 module Printing : sig
   val write_all : filename:string -> string -> unit
 
@@ -73,3 +70,5 @@ val inline_shapes :
 val filter_map : 'a list -> f:('a -> 'b option) -> 'b list
 
 val option_map : string option -> f:string -> string option
+
+val of_option_exn : 'a option -> 'a
