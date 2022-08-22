@@ -1,173 +1,170 @@
 type t =
-  | AlreadyExistsException
-  | AssociatedInstances
-  | AssociationAlreadyExists
-  | AssociationDoesNotExist
-  | AssociationExecutionDoesNotExist
-  | AssociationLimitExceeded
-  | AssociationVersionLimitExceeded
-  | AuthFailure
-  | AutomationDefinitionNotFoundException
-  | AutomationDefinitionVersionNotFoundException
-  | AutomationExecutionLimitExceededException
-  | AutomationExecutionNotFoundException
-  | AutomationStepNotFoundException
-  | Blocked
-  | ComplianceTypeCountLimitExceededException
-  | CustomSchemaCountLimitExceededException
-  | DocumentAlreadyExists
-  | DocumentLimitExceeded
-  | DocumentPermissionLimit
-  | DocumentVersionLimitExceeded
-  | DoesNotExistException
-  | DryRunOperation
-  | DuplicateDocumentContent
-  | DuplicateDocumentVersionName
-  | DuplicateInstanceId
-  | FeatureNotAvailableException
-  | HierarchyLevelLimitExceededException
-  | HierarchyTypeMismatchException
-  | IdempotentParameterMismatch
-  | IncompatiblePolicyException
-  | IncompleteSignature
-  | InternalFailure
-  | InternalServerError
-  | InvalidAction
-  | InvalidActivation
-  | InvalidActivationId
-  | InvalidAggregatorException
-  | InvalidAllowedPatternException
-  | InvalidAssociation
-  | InvalidAssociationVersion
-  | InvalidAutomationExecutionParametersException
-  | InvalidAutomationSignalException
-  | InvalidAutomationStatusUpdateException
-  | InvalidClientTokenId
-  | InvalidCommandId
-  | InvalidDeleteInventoryParametersException
-  | InvalidDeletionIdException
-  | InvalidDocument
-  | InvalidDocumentContent
-  | InvalidDocumentOperation
-  | InvalidDocumentSchemaVersion
-  | InvalidDocumentType
-  | InvalidDocumentVersion
-  | InvalidFilter
-  | InvalidFilterKey
-  | InvalidFilterOption
-  | InvalidFilterValue
-  | InvalidInstanceId
-  | InvalidInstanceInformationFilterValue
-  | InvalidInventoryGroupException
-  | InvalidInventoryItemContextException
-  | InvalidInventoryRequestException
-  | InvalidItemContentException
-  | InvalidKeyId
-  | InvalidNextToken
-  | InvalidNotificationConfig
-  | InvalidOptionException
-  | InvalidOutputFolder
-  | InvalidOutputLocation
-  | InvalidParameter
-  | InvalidParameterCombination
-  | InvalidParameterValue
-  | InvalidParameters
-  | InvalidPermissionType
-  | InvalidPluginName
-  | InvalidPolicyAttributeException
-  | InvalidPolicyTypeException
-  | InvalidQueryParameter
-  | InvalidResourceId
-  | InvalidResourceType
-  | InvalidResultAttributeException
-  | InvalidRole
-  | InvalidSchedule
-  | InvalidTarget
-  | InvalidTypeNameException
-  | InvalidUpdate
-  | InvocationDoesNotExist
-  | ItemContentMismatchException
-  | ItemSizeLimitExceededException
-  | MalformedQueryString
-  | MaxDocumentSizeExceeded
-  | MissingAction
-  | MissingAuthenticationToken
-  | MissingParameter
-  | OpsItemAlreadyExistsException
-  | OpsItemInvalidParameterException
-  | OpsItemLimitExceededException
-  | OpsItemNotFoundException
-  | OptInRequired
-  | ParameterAlreadyExists
-  | ParameterLimitExceeded
-  | ParameterMaxVersionLimitExceeded
-  | ParameterNotFound
-  | ParameterPatternMismatchException
-  | ParameterVersionLabelLimitExceeded
-  | ParameterVersionNotFound
-  | PendingVerification
-  | PoliciesLimitExceededException
-  | RequestExpired
-  | RequestLimitExceeded
-  | ResourceDataSyncAlreadyExistsException
-  | ResourceDataSyncConflictException
-  | ResourceDataSyncCountExceededException
-  | ResourceDataSyncInvalidConfigurationException
-  | ResourceDataSyncNotFoundException
-  | ResourceInUseException
-  | ResourceLimitExceededException
-  | ServiceSettingNotFound
-  | ServiceUnavailable
-  | StatusUnchanged
-  | SubTypeCountLimitExceededException
-  | TargetInUseException
-  | TargetNotConnected
-  | Throttling
-  | TooManyTagsError
-  | TooManyUpdates
-  | TotalSizeLimitExceededException
-  | UnauthorizedOperation
-  | UnknownParameter
-  | UnsupportedCalendarException
-  | UnsupportedFeatureRequiredException
-  | UnsupportedInventoryItemContextException
-  | UnsupportedInventorySchemaVersionException
-  | UnsupportedOperatingSystem
-  | UnsupportedParameterType
-  | UnsupportedPlatformType
-  | UnsupportedProtocol
-  | ValidationError
-  | Uninhabited
-
+  | AlreadyExistsException 
+  | AssociatedInstances 
+  | AssociationAlreadyExists 
+  | AssociationDoesNotExist 
+  | AssociationExecutionDoesNotExist 
+  | AssociationLimitExceeded 
+  | AssociationVersionLimitExceeded 
+  | AuthFailure 
+  | AutomationDefinitionNotFoundException 
+  | AutomationDefinitionVersionNotFoundException 
+  | AutomationExecutionLimitExceededException 
+  | AutomationExecutionNotFoundException 
+  | AutomationStepNotFoundException 
+  | Blocked 
+  | ComplianceTypeCountLimitExceededException 
+  | CustomSchemaCountLimitExceededException 
+  | DocumentAlreadyExists 
+  | DocumentLimitExceeded 
+  | DocumentPermissionLimit 
+  | DocumentVersionLimitExceeded 
+  | DoesNotExistException 
+  | DryRunOperation 
+  | DuplicateDocumentContent 
+  | DuplicateDocumentVersionName 
+  | DuplicateInstanceId 
+  | FeatureNotAvailableException 
+  | HierarchyLevelLimitExceededException 
+  | HierarchyTypeMismatchException 
+  | IdempotentParameterMismatch 
+  | IncompatiblePolicyException 
+  | IncompleteSignature 
+  | InternalFailure 
+  | InternalServerError 
+  | InvalidAction 
+  | InvalidActivation 
+  | InvalidActivationId 
+  | InvalidAggregatorException 
+  | InvalidAllowedPatternException 
+  | InvalidAssociation 
+  | InvalidAssociationVersion 
+  | InvalidAutomationExecutionParametersException 
+  | InvalidAutomationSignalException 
+  | InvalidAutomationStatusUpdateException 
+  | InvalidClientTokenId 
+  | InvalidCommandId 
+  | InvalidDeleteInventoryParametersException 
+  | InvalidDeletionIdException 
+  | InvalidDocument 
+  | InvalidDocumentContent 
+  | InvalidDocumentOperation 
+  | InvalidDocumentSchemaVersion 
+  | InvalidDocumentType 
+  | InvalidDocumentVersion 
+  | InvalidFilter 
+  | InvalidFilterKey 
+  | InvalidFilterOption 
+  | InvalidFilterValue 
+  | InvalidInstanceId 
+  | InvalidInstanceInformationFilterValue 
+  | InvalidInventoryGroupException 
+  | InvalidInventoryItemContextException 
+  | InvalidInventoryRequestException 
+  | InvalidItemContentException 
+  | InvalidKeyId 
+  | InvalidNextToken 
+  | InvalidNotificationConfig 
+  | InvalidOptionException 
+  | InvalidOutputFolder 
+  | InvalidOutputLocation 
+  | InvalidParameter 
+  | InvalidParameterCombination 
+  | InvalidParameterValue 
+  | InvalidParameters 
+  | InvalidPermissionType 
+  | InvalidPluginName 
+  | InvalidPolicyAttributeException 
+  | InvalidPolicyTypeException 
+  | InvalidQueryParameter 
+  | InvalidResourceId 
+  | InvalidResourceType 
+  | InvalidResultAttributeException 
+  | InvalidRole 
+  | InvalidSchedule 
+  | InvalidTarget 
+  | InvalidTypeNameException 
+  | InvalidUpdate 
+  | InvocationDoesNotExist 
+  | ItemContentMismatchException 
+  | ItemSizeLimitExceededException 
+  | MalformedQueryString 
+  | MaxDocumentSizeExceeded 
+  | MissingAction 
+  | MissingAuthenticationToken 
+  | MissingParameter 
+  | OpsItemAlreadyExistsException 
+  | OpsItemInvalidParameterException 
+  | OpsItemLimitExceededException 
+  | OpsItemNotFoundException 
+  | OptInRequired 
+  | ParameterAlreadyExists 
+  | ParameterLimitExceeded 
+  | ParameterMaxVersionLimitExceeded 
+  | ParameterNotFound 
+  | ParameterPatternMismatchException 
+  | ParameterVersionLabelLimitExceeded 
+  | ParameterVersionNotFound 
+  | PendingVerification 
+  | PoliciesLimitExceededException 
+  | RequestExpired 
+  | RequestLimitExceeded 
+  | ResourceDataSyncAlreadyExistsException 
+  | ResourceDataSyncConflictException 
+  | ResourceDataSyncCountExceededException 
+  | ResourceDataSyncInvalidConfigurationException 
+  | ResourceDataSyncNotFoundException 
+  | ResourceInUseException 
+  | ResourceLimitExceededException 
+  | ServiceSettingNotFound 
+  | ServiceUnavailable 
+  | StatusUnchanged 
+  | SubTypeCountLimitExceededException 
+  | TargetInUseException 
+  | TargetNotConnected 
+  | Throttling 
+  | TooManyTagsError 
+  | TooManyUpdates 
+  | TotalSizeLimitExceededException 
+  | UnauthorizedOperation 
+  | UnknownParameter 
+  | UnsupportedCalendarException 
+  | UnsupportedFeatureRequiredException 
+  | UnsupportedInventoryItemContextException 
+  | UnsupportedInventorySchemaVersionException 
+  | UnsupportedOperatingSystem 
+  | UnsupportedParameterType 
+  | UnsupportedPlatformType 
+  | UnsupportedProtocol 
+  | ValidationError 
+  | Uninhabited 
 let common =
-  [ UnsupportedProtocol
-  ; UnknownParameter
-  ; UnauthorizedOperation
-  ; RequestLimitExceeded
-  ; PendingVerification
-  ; InvalidParameter
-  ; IdempotentParameterMismatch
-  ; DryRunOperation
-  ; Blocked
-  ; AuthFailure
-  ; ValidationError
-  ; Throttling
-  ; ServiceUnavailable
-  ; RequestExpired
-  ; OptInRequired
-  ; MissingParameter
-  ; MissingAuthenticationToken
-  ; MissingAction
-  ; MalformedQueryString
-  ; InvalidQueryParameter
-  ; InvalidParameterValue
-  ; InvalidParameterCombination
-  ; InvalidClientTokenId
-  ; InvalidAction
-  ; InternalFailure
-  ; IncompleteSignature
-  ]
-
+  [UnsupportedProtocol;
+  UnknownParameter;
+  UnauthorizedOperation;
+  RequestLimitExceeded;
+  PendingVerification;
+  InvalidParameter;
+  IdempotentParameterMismatch;
+  DryRunOperation;
+  Blocked;
+  AuthFailure;
+  ValidationError;
+  Throttling;
+  ServiceUnavailable;
+  RequestExpired;
+  OptInRequired;
+  MissingParameter;
+  MissingAuthenticationToken;
+  MissingAction;
+  MalformedQueryString;
+  InvalidQueryParameter;
+  InvalidParameterValue;
+  InvalidParameterCombination;
+  InvalidClientTokenId;
+  InvalidAction;
+  InternalFailure;
+  IncompleteSignature]
 let to_http_code e =
   match e with
   | AlreadyExistsException -> None
@@ -309,7 +306,6 @@ let to_http_code e =
   | UnsupportedProtocol -> None
   | ValidationError -> Some 400
   | Uninhabited -> None
-
 let to_string e =
   match e with
   | AlreadyExistsException -> "AlreadyExistsException"
@@ -320,17 +316,20 @@ let to_string e =
   | AssociationLimitExceeded -> "AssociationLimitExceeded"
   | AssociationVersionLimitExceeded -> "AssociationVersionLimitExceeded"
   | AuthFailure -> "AuthFailure"
-  | AutomationDefinitionNotFoundException -> "AutomationDefinitionNotFoundException"
+  | AutomationDefinitionNotFoundException ->
+      "AutomationDefinitionNotFoundException"
   | AutomationDefinitionVersionNotFoundException ->
       "AutomationDefinitionVersionNotFoundException"
   | AutomationExecutionLimitExceededException ->
       "AutomationExecutionLimitExceededException"
-  | AutomationExecutionNotFoundException -> "AutomationExecutionNotFoundException"
+  | AutomationExecutionNotFoundException ->
+      "AutomationExecutionNotFoundException"
   | AutomationStepNotFoundException -> "AutomationStepNotFoundException"
   | Blocked -> "Blocked"
   | ComplianceTypeCountLimitExceededException ->
       "ComplianceTypeCountLimitExceededException"
-  | CustomSchemaCountLimitExceededException -> "CustomSchemaCountLimitExceededException"
+  | CustomSchemaCountLimitExceededException ->
+      "CustomSchemaCountLimitExceededException"
   | DocumentAlreadyExists -> "DocumentAlreadyExists"
   | DocumentLimitExceeded -> "DocumentLimitExceeded"
   | DocumentPermissionLimit -> "DocumentPermissionLimit"
@@ -341,7 +340,8 @@ let to_string e =
   | DuplicateDocumentVersionName -> "DuplicateDocumentVersionName"
   | DuplicateInstanceId -> "DuplicateInstanceId"
   | FeatureNotAvailableException -> "FeatureNotAvailableException"
-  | HierarchyLevelLimitExceededException -> "HierarchyLevelLimitExceededException"
+  | HierarchyLevelLimitExceededException ->
+      "HierarchyLevelLimitExceededException"
   | HierarchyTypeMismatchException -> "HierarchyTypeMismatchException"
   | IdempotentParameterMismatch -> "IdempotentParameterMismatch"
   | IncompatiblePolicyException -> "IncompatiblePolicyException"
@@ -358,7 +358,8 @@ let to_string e =
   | InvalidAutomationExecutionParametersException ->
       "InvalidAutomationExecutionParametersException"
   | InvalidAutomationSignalException -> "InvalidAutomationSignalException"
-  | InvalidAutomationStatusUpdateException -> "InvalidAutomationStatusUpdateException"
+  | InvalidAutomationStatusUpdateException ->
+      "InvalidAutomationStatusUpdateException"
   | InvalidClientTokenId -> "InvalidClientTokenId"
   | InvalidCommandId -> "InvalidCommandId"
   | InvalidDeleteInventoryParametersException ->
@@ -375,9 +376,11 @@ let to_string e =
   | InvalidFilterOption -> "InvalidFilterOption"
   | InvalidFilterValue -> "InvalidFilterValue"
   | InvalidInstanceId -> "InvalidInstanceId"
-  | InvalidInstanceInformationFilterValue -> "InvalidInstanceInformationFilterValue"
+  | InvalidInstanceInformationFilterValue ->
+      "InvalidInstanceInformationFilterValue"
   | InvalidInventoryGroupException -> "InvalidInventoryGroupException"
-  | InvalidInventoryItemContextException -> "InvalidInventoryItemContextException"
+  | InvalidInventoryItemContextException ->
+      "InvalidInventoryItemContextException"
   | InvalidInventoryRequestException -> "InvalidInventoryRequestException"
   | InvalidItemContentException -> "InvalidItemContentException"
   | InvalidKeyId -> "InvalidKeyId"
@@ -421,15 +424,18 @@ let to_string e =
   | ParameterMaxVersionLimitExceeded -> "ParameterMaxVersionLimitExceeded"
   | ParameterNotFound -> "ParameterNotFound"
   | ParameterPatternMismatchException -> "ParameterPatternMismatchException"
-  | ParameterVersionLabelLimitExceeded -> "ParameterVersionLabelLimitExceeded"
+  | ParameterVersionLabelLimitExceeded ->
+      "ParameterVersionLabelLimitExceeded"
   | ParameterVersionNotFound -> "ParameterVersionNotFound"
   | PendingVerification -> "PendingVerification"
   | PoliciesLimitExceededException -> "PoliciesLimitExceededException"
   | RequestExpired -> "RequestExpired"
   | RequestLimitExceeded -> "RequestLimitExceeded"
-  | ResourceDataSyncAlreadyExistsException -> "ResourceDataSyncAlreadyExistsException"
+  | ResourceDataSyncAlreadyExistsException ->
+      "ResourceDataSyncAlreadyExistsException"
   | ResourceDataSyncConflictException -> "ResourceDataSyncConflictException"
-  | ResourceDataSyncCountExceededException -> "ResourceDataSyncCountExceededException"
+  | ResourceDataSyncCountExceededException ->
+      "ResourceDataSyncCountExceededException"
   | ResourceDataSyncInvalidConfigurationException ->
       "ResourceDataSyncInvalidConfigurationException"
   | ResourceDataSyncNotFoundException -> "ResourceDataSyncNotFoundException"
@@ -438,7 +444,8 @@ let to_string e =
   | ServiceSettingNotFound -> "ServiceSettingNotFound"
   | ServiceUnavailable -> "ServiceUnavailable"
   | StatusUnchanged -> "StatusUnchanged"
-  | SubTypeCountLimitExceededException -> "SubTypeCountLimitExceededException"
+  | SubTypeCountLimitExceededException ->
+      "SubTypeCountLimitExceededException"
   | TargetInUseException -> "TargetInUseException"
   | TargetNotConnected -> "TargetNotConnected"
   | Throttling -> "Throttling"
@@ -448,8 +455,10 @@ let to_string e =
   | UnauthorizedOperation -> "UnauthorizedOperation"
   | UnknownParameter -> "UnknownParameter"
   | UnsupportedCalendarException -> "UnsupportedCalendarException"
-  | UnsupportedFeatureRequiredException -> "UnsupportedFeatureRequiredException"
-  | UnsupportedInventoryItemContextException -> "UnsupportedInventoryItemContextException"
+  | UnsupportedFeatureRequiredException ->
+      "UnsupportedFeatureRequiredException"
+  | UnsupportedInventoryItemContextException ->
+      "UnsupportedInventoryItemContextException"
   | UnsupportedInventorySchemaVersionException ->
       "UnsupportedInventorySchemaVersionException"
   | UnsupportedOperatingSystem -> "UnsupportedOperatingSystem"
@@ -458,23 +467,25 @@ let to_string e =
   | UnsupportedProtocol -> "UnsupportedProtocol"
   | ValidationError -> "ValidationError"
   | Uninhabited -> "Uninhabited"
-
 let of_string e =
   match e with
   | "AlreadyExistsException" -> Some AlreadyExistsException
   | "AssociatedInstances" -> Some AssociatedInstances
   | "AssociationAlreadyExists" -> Some AssociationAlreadyExists
   | "AssociationDoesNotExist" -> Some AssociationDoesNotExist
-  | "AssociationExecutionDoesNotExist" -> Some AssociationExecutionDoesNotExist
+  | "AssociationExecutionDoesNotExist" ->
+      Some AssociationExecutionDoesNotExist
   | "AssociationLimitExceeded" -> Some AssociationLimitExceeded
   | "AssociationVersionLimitExceeded" -> Some AssociationVersionLimitExceeded
   | "AuthFailure" -> Some AuthFailure
-  | "AutomationDefinitionNotFoundException" -> Some AutomationDefinitionNotFoundException
+  | "AutomationDefinitionNotFoundException" ->
+      Some AutomationDefinitionNotFoundException
   | "AutomationDefinitionVersionNotFoundException" ->
       Some AutomationDefinitionVersionNotFoundException
   | "AutomationExecutionLimitExceededException" ->
       Some AutomationExecutionLimitExceededException
-  | "AutomationExecutionNotFoundException" -> Some AutomationExecutionNotFoundException
+  | "AutomationExecutionNotFoundException" ->
+      Some AutomationExecutionNotFoundException
   | "AutomationStepNotFoundException" -> Some AutomationStepNotFoundException
   | "Blocked" -> Some Blocked
   | "ComplianceTypeCountLimitExceededException" ->
@@ -491,7 +502,8 @@ let of_string e =
   | "DuplicateDocumentVersionName" -> Some DuplicateDocumentVersionName
   | "DuplicateInstanceId" -> Some DuplicateInstanceId
   | "FeatureNotAvailableException" -> Some FeatureNotAvailableException
-  | "HierarchyLevelLimitExceededException" -> Some HierarchyLevelLimitExceededException
+  | "HierarchyLevelLimitExceededException" ->
+      Some HierarchyLevelLimitExceededException
   | "HierarchyTypeMismatchException" -> Some HierarchyTypeMismatchException
   | "IdempotentParameterMismatch" -> Some IdempotentParameterMismatch
   | "IncompatiblePolicyException" -> Some IncompatiblePolicyException
@@ -507,7 +519,8 @@ let of_string e =
   | "InvalidAssociationVersion" -> Some InvalidAssociationVersion
   | "InvalidAutomationExecutionParametersException" ->
       Some InvalidAutomationExecutionParametersException
-  | "InvalidAutomationSignalException" -> Some InvalidAutomationSignalException
+  | "InvalidAutomationSignalException" ->
+      Some InvalidAutomationSignalException
   | "InvalidAutomationStatusUpdateException" ->
       Some InvalidAutomationStatusUpdateException
   | "InvalidClientTokenId" -> Some InvalidClientTokenId
@@ -526,10 +539,13 @@ let of_string e =
   | "InvalidFilterOption" -> Some InvalidFilterOption
   | "InvalidFilterValue" -> Some InvalidFilterValue
   | "InvalidInstanceId" -> Some InvalidInstanceId
-  | "InvalidInstanceInformationFilterValue" -> Some InvalidInstanceInformationFilterValue
+  | "InvalidInstanceInformationFilterValue" ->
+      Some InvalidInstanceInformationFilterValue
   | "InvalidInventoryGroupException" -> Some InvalidInventoryGroupException
-  | "InvalidInventoryItemContextException" -> Some InvalidInventoryItemContextException
-  | "InvalidInventoryRequestException" -> Some InvalidInventoryRequestException
+  | "InvalidInventoryItemContextException" ->
+      Some InvalidInventoryItemContextException
+  | "InvalidInventoryRequestException" ->
+      Some InvalidInventoryRequestException
   | "InvalidItemContentException" -> Some InvalidItemContentException
   | "InvalidKeyId" -> Some InvalidKeyId
   | "InvalidNextToken" -> Some InvalidNextToken
@@ -563,16 +579,20 @@ let of_string e =
   | "MissingAuthenticationToken" -> Some MissingAuthenticationToken
   | "MissingParameter" -> Some MissingParameter
   | "OpsItemAlreadyExistsException" -> Some OpsItemAlreadyExistsException
-  | "OpsItemInvalidParameterException" -> Some OpsItemInvalidParameterException
+  | "OpsItemInvalidParameterException" ->
+      Some OpsItemInvalidParameterException
   | "OpsItemLimitExceededException" -> Some OpsItemLimitExceededException
   | "OpsItemNotFoundException" -> Some OpsItemNotFoundException
   | "OptInRequired" -> Some OptInRequired
   | "ParameterAlreadyExists" -> Some ParameterAlreadyExists
   | "ParameterLimitExceeded" -> Some ParameterLimitExceeded
-  | "ParameterMaxVersionLimitExceeded" -> Some ParameterMaxVersionLimitExceeded
+  | "ParameterMaxVersionLimitExceeded" ->
+      Some ParameterMaxVersionLimitExceeded
   | "ParameterNotFound" -> Some ParameterNotFound
-  | "ParameterPatternMismatchException" -> Some ParameterPatternMismatchException
-  | "ParameterVersionLabelLimitExceeded" -> Some ParameterVersionLabelLimitExceeded
+  | "ParameterPatternMismatchException" ->
+      Some ParameterPatternMismatchException
+  | "ParameterVersionLabelLimitExceeded" ->
+      Some ParameterVersionLabelLimitExceeded
   | "ParameterVersionNotFound" -> Some ParameterVersionNotFound
   | "PendingVerification" -> Some PendingVerification
   | "PoliciesLimitExceededException" -> Some PoliciesLimitExceededException
@@ -580,18 +600,21 @@ let of_string e =
   | "RequestLimitExceeded" -> Some RequestLimitExceeded
   | "ResourceDataSyncAlreadyExistsException" ->
       Some ResourceDataSyncAlreadyExistsException
-  | "ResourceDataSyncConflictException" -> Some ResourceDataSyncConflictException
+  | "ResourceDataSyncConflictException" ->
+      Some ResourceDataSyncConflictException
   | "ResourceDataSyncCountExceededException" ->
       Some ResourceDataSyncCountExceededException
   | "ResourceDataSyncInvalidConfigurationException" ->
       Some ResourceDataSyncInvalidConfigurationException
-  | "ResourceDataSyncNotFoundException" -> Some ResourceDataSyncNotFoundException
+  | "ResourceDataSyncNotFoundException" ->
+      Some ResourceDataSyncNotFoundException
   | "ResourceInUseException" -> Some ResourceInUseException
   | "ResourceLimitExceededException" -> Some ResourceLimitExceededException
   | "ServiceSettingNotFound" -> Some ServiceSettingNotFound
   | "ServiceUnavailable" -> Some ServiceUnavailable
   | "StatusUnchanged" -> Some StatusUnchanged
-  | "SubTypeCountLimitExceededException" -> Some SubTypeCountLimitExceededException
+  | "SubTypeCountLimitExceededException" ->
+      Some SubTypeCountLimitExceededException
   | "TargetInUseException" -> Some TargetInUseException
   | "TargetNotConnected" -> Some TargetNotConnected
   | "Throttling" -> Some Throttling
@@ -601,7 +624,8 @@ let of_string e =
   | "UnauthorizedOperation" -> Some UnauthorizedOperation
   | "UnknownParameter" -> Some UnknownParameter
   | "UnsupportedCalendarException" -> Some UnsupportedCalendarException
-  | "UnsupportedFeatureRequiredException" -> Some UnsupportedFeatureRequiredException
+  | "UnsupportedFeatureRequiredException" ->
+      Some UnsupportedFeatureRequiredException
   | "UnsupportedInventoryItemContextException" ->
       Some UnsupportedInventoryItemContextException
   | "UnsupportedInventorySchemaVersionException" ->

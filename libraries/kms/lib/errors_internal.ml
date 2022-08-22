@@ -1,94 +1,91 @@
 type t =
-  | AlreadyExistsException
-  | AuthFailure
-  | Blocked
-  | CloudHsmClusterInUseException
-  | CloudHsmClusterInvalidConfigurationException
-  | CloudHsmClusterNotActiveException
-  | CloudHsmClusterNotFoundException
-  | CloudHsmClusterNotRelatedException
-  | CustomKeyStoreHasCMKsException
-  | CustomKeyStoreInvalidStateException
-  | CustomKeyStoreNameInUseException
-  | CustomKeyStoreNotFoundException
-  | DependencyTimeoutException
-  | DisabledException
-  | DryRunOperation
-  | ExpiredImportTokenException
-  | IdempotentParameterMismatch
-  | IncompleteSignature
-  | IncorrectKeyException
-  | IncorrectKeyMaterialException
-  | IncorrectTrustAnchorException
-  | InternalFailure
-  | InvalidAction
-  | InvalidAliasNameException
-  | InvalidArnException
-  | InvalidCiphertextException
-  | InvalidClientTokenId
-  | InvalidGrantIdException
-  | InvalidGrantTokenException
-  | InvalidImportTokenException
-  | InvalidKeyUsageException
-  | InvalidMarkerException
-  | InvalidParameter
-  | InvalidParameterCombination
-  | InvalidParameterValue
-  | InvalidQueryParameter
-  | KMSInternalException
-  | KMSInvalidSignatureException
-  | KMSInvalidStateException
-  | KeyUnavailableException
-  | LimitExceededException
-  | MalformedPolicyDocumentException
-  | MalformedQueryString
-  | MissingAction
-  | MissingAuthenticationToken
-  | MissingParameter
-  | NotFoundException
-  | OptInRequired
-  | PendingVerification
-  | RequestExpired
-  | RequestLimitExceeded
-  | ServiceUnavailable
-  | TagException
-  | Throttling
-  | UnauthorizedOperation
-  | UnknownParameter
-  | UnsupportedOperationException
-  | UnsupportedProtocol
-  | ValidationError
-  | Uninhabited
-
+  | AlreadyExistsException 
+  | AuthFailure 
+  | Blocked 
+  | CloudHsmClusterInUseException 
+  | CloudHsmClusterInvalidConfigurationException 
+  | CloudHsmClusterNotActiveException 
+  | CloudHsmClusterNotFoundException 
+  | CloudHsmClusterNotRelatedException 
+  | CustomKeyStoreHasCMKsException 
+  | CustomKeyStoreInvalidStateException 
+  | CustomKeyStoreNameInUseException 
+  | CustomKeyStoreNotFoundException 
+  | DependencyTimeoutException 
+  | DisabledException 
+  | DryRunOperation 
+  | ExpiredImportTokenException 
+  | IdempotentParameterMismatch 
+  | IncompleteSignature 
+  | IncorrectKeyException 
+  | IncorrectKeyMaterialException 
+  | IncorrectTrustAnchorException 
+  | InternalFailure 
+  | InvalidAction 
+  | InvalidAliasNameException 
+  | InvalidArnException 
+  | InvalidCiphertextException 
+  | InvalidClientTokenId 
+  | InvalidGrantIdException 
+  | InvalidGrantTokenException 
+  | InvalidImportTokenException 
+  | InvalidKeyUsageException 
+  | InvalidMarkerException 
+  | InvalidParameter 
+  | InvalidParameterCombination 
+  | InvalidParameterValue 
+  | InvalidQueryParameter 
+  | KMSInternalException 
+  | KMSInvalidSignatureException 
+  | KMSInvalidStateException 
+  | KeyUnavailableException 
+  | LimitExceededException 
+  | MalformedPolicyDocumentException 
+  | MalformedQueryString 
+  | MissingAction 
+  | MissingAuthenticationToken 
+  | MissingParameter 
+  | NotFoundException 
+  | OptInRequired 
+  | PendingVerification 
+  | RequestExpired 
+  | RequestLimitExceeded 
+  | ServiceUnavailable 
+  | TagException 
+  | Throttling 
+  | UnauthorizedOperation 
+  | UnknownParameter 
+  | UnsupportedOperationException 
+  | UnsupportedProtocol 
+  | ValidationError 
+  | Uninhabited 
 let common =
-  [ UnsupportedProtocol
-  ; UnknownParameter
-  ; UnauthorizedOperation
-  ; RequestLimitExceeded
-  ; PendingVerification
-  ; InvalidParameter
-  ; IdempotentParameterMismatch
-  ; DryRunOperation
-  ; Blocked
-  ; AuthFailure
-  ; ValidationError
-  ; Throttling
-  ; ServiceUnavailable
-  ; RequestExpired
-  ; OptInRequired
-  ; MissingParameter
-  ; MissingAuthenticationToken
-  ; MissingAction
-  ; MalformedQueryString
-  ; InvalidQueryParameter
-  ; InvalidParameterValue
-  ; InvalidParameterCombination
-  ; InvalidClientTokenId
-  ; InvalidAction
-  ; InternalFailure
-  ; IncompleteSignature
-  ]
-
+  [UnsupportedProtocol;
+  UnknownParameter;
+  UnauthorizedOperation;
+  RequestLimitExceeded;
+  PendingVerification;
+  InvalidParameter;
+  IdempotentParameterMismatch;
+  DryRunOperation;
+  Blocked;
+  AuthFailure;
+  ValidationError;
+  Throttling;
+  ServiceUnavailable;
+  RequestExpired;
+  OptInRequired;
+  MissingParameter;
+  MissingAuthenticationToken;
+  MissingAction;
+  MalformedQueryString;
+  InvalidQueryParameter;
+  InvalidParameterValue;
+  InvalidParameterCombination;
+  InvalidClientTokenId;
+  InvalidAction;
+  InternalFailure;
+  IncompleteSignature]
 let to_http_code e =
   match e with
   | AlreadyExistsException -> None
@@ -151,7 +148,6 @@ let to_http_code e =
   | UnsupportedProtocol -> None
   | ValidationError -> Some 400
   | Uninhabited -> None
-
 let to_string e =
   match e with
   | AlreadyExistsException -> "AlreadyExistsException"
@@ -162,9 +158,11 @@ let to_string e =
       "CloudHsmClusterInvalidConfigurationException"
   | CloudHsmClusterNotActiveException -> "CloudHsmClusterNotActiveException"
   | CloudHsmClusterNotFoundException -> "CloudHsmClusterNotFoundException"
-  | CloudHsmClusterNotRelatedException -> "CloudHsmClusterNotRelatedException"
+  | CloudHsmClusterNotRelatedException ->
+      "CloudHsmClusterNotRelatedException"
   | CustomKeyStoreHasCMKsException -> "CustomKeyStoreHasCMKsException"
-  | CustomKeyStoreInvalidStateException -> "CustomKeyStoreInvalidStateException"
+  | CustomKeyStoreInvalidStateException ->
+      "CustomKeyStoreInvalidStateException"
   | CustomKeyStoreNameInUseException -> "CustomKeyStoreNameInUseException"
   | CustomKeyStoreNotFoundException -> "CustomKeyStoreNotFoundException"
   | DependencyTimeoutException -> "DependencyTimeoutException"
@@ -215,7 +213,6 @@ let to_string e =
   | UnsupportedProtocol -> "UnsupportedProtocol"
   | ValidationError -> "ValidationError"
   | Uninhabited -> "Uninhabited"
-
 let of_string e =
   match e with
   | "AlreadyExistsException" -> Some AlreadyExistsException
@@ -224,12 +221,17 @@ let of_string e =
   | "CloudHsmClusterInUseException" -> Some CloudHsmClusterInUseException
   | "CloudHsmClusterInvalidConfigurationException" ->
       Some CloudHsmClusterInvalidConfigurationException
-  | "CloudHsmClusterNotActiveException" -> Some CloudHsmClusterNotActiveException
-  | "CloudHsmClusterNotFoundException" -> Some CloudHsmClusterNotFoundException
-  | "CloudHsmClusterNotRelatedException" -> Some CloudHsmClusterNotRelatedException
+  | "CloudHsmClusterNotActiveException" ->
+      Some CloudHsmClusterNotActiveException
+  | "CloudHsmClusterNotFoundException" ->
+      Some CloudHsmClusterNotFoundException
+  | "CloudHsmClusterNotRelatedException" ->
+      Some CloudHsmClusterNotRelatedException
   | "CustomKeyStoreHasCMKsException" -> Some CustomKeyStoreHasCMKsException
-  | "CustomKeyStoreInvalidStateException" -> Some CustomKeyStoreInvalidStateException
-  | "CustomKeyStoreNameInUseException" -> Some CustomKeyStoreNameInUseException
+  | "CustomKeyStoreInvalidStateException" ->
+      Some CustomKeyStoreInvalidStateException
+  | "CustomKeyStoreNameInUseException" ->
+      Some CustomKeyStoreNameInUseException
   | "CustomKeyStoreNotFoundException" -> Some CustomKeyStoreNotFoundException
   | "DependencyTimeoutException" -> Some DependencyTimeoutException
   | "DisabledException" -> Some DisabledException
@@ -260,7 +262,8 @@ let of_string e =
   | "KMSInvalidStateException" -> Some KMSInvalidStateException
   | "KeyUnavailableException" -> Some KeyUnavailableException
   | "LimitExceededException" -> Some LimitExceededException
-  | "MalformedPolicyDocumentException" -> Some MalformedPolicyDocumentException
+  | "MalformedPolicyDocumentException" ->
+      Some MalformedPolicyDocumentException
   | "MalformedQueryString" -> Some MalformedQueryString
   | "MissingAction" -> Some MissingAction
   | "MissingAuthenticationToken" -> Some MissingAuthenticationToken

@@ -1,0 +1,7 @@
+(library
+ (name aws_sns)
+ (public_name aws-sns)
+ (synopsis "aws-Amazon Simple Notification Service")
+ (flags
+  (:standard -w -27))
+ (libraries aws))

@@ -1,0 +1,453 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Aug 22 16:23:57 2022
+
+# Variables
+
+# environment
+LC_ALL = C
+# environment
+FNM_DIR = /home/ubuntu/.fnm
+# environment
+VSCODE_CWD = /home/ubuntu
+# environment
+CAML_LD_LIBRARY_PATH = /home/ubuntu/.opam/mina/lib/stublibs:/home/ubuntu/.opam/mina/lib/ocaml/stublibs:/home/ubuntu/.opam/mina/lib/ocaml
+# default
+MAKE_COMMAND := make
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/ubuntu/development/ocaml-aws
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+FNM_VERSION_FILE_STRATEGY = local
+# environment
+LANG = C
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# environment
+FNM_NODE_DIST_MIRROR = https://nodejs.org/dist
+# makefile
+MAKEFLAGS = pqrR
+# environment
+FNM_LOGLEVEL = info
+# makefile
+CURDIR := /home/ubuntu/development/ocaml-aws
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+FNM_ARCH = x64
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+OCAML_TOPLEVEL_PATH = /home/ubuntu/.opam/mina/lib/toplevel
+# environment
+XDG_SESSION_TYPE = tty
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+*F = $(notdir $*)
+# environment
+MANPATH = :/home/ubuntu/.opam/mina/man:/home/ubuntu/.opam/mina/man
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/ubuntu/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/bin/remote-cli:/home/ubuntu/.opam/mina/bin:/run/user/1000/fnm_multishells/1123094_1660709681366/bin:/home/ubuntu/.fnm:/home/ubuntu/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/ubuntu/.opam/mina/bin:/home/ubuntu/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+NIX_SSL_CERT_FILE = /etc/ssl/certs/ca-certificates.crt
+# default
+MAKEFILES := 
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+SSH_CLIENT = 142.197.125.183 54237 22
+# environment
+FNM_MULTISHELL_PATH = /run/user/1000/fnm_multishells/1123094_1660709681366
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# environment
+OCAML_LSP_SERVER_LOG = -
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+BROWSER = /home/ubuntu/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/bin/helpers/browser.sh
+# environment
+LOGNAME = ubuntu
+# makefile
+.DEFAULT_GOAL := build
+# environment
+USER = ubuntu
+# default
+MAKE_VERSION := 4.3
+# environment
+NIX_PROFILES = /nix/var/nix/profiles/default /home/ubuntu/.nix-profile
+# environment
+OPAM_SWITCH_PREFIX = /home/ubuntu/.opam/mina
+# environment
+VSCODE_AGENT_FOLDER = /home/ubuntu/.vscode-server
+# environment
+_ = /home/ubuntu/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/node
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-e3886a17-1992-46bb-b131-10fb617b0cb3.sock
+# environment
+XDG_SESSION_CLASS = user
+# makefile (from 'Makefile', line 33)
+LIBRARIES := aws-cloudformation aws-cloudtrail aws-cloudwatch aws-elasticache aws-elasticloadbalancing aws-rds aws-sdb aws-ssm aws-sts aws-route53 aws-sqs 
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/ubuntu
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+XDG_SESSION_ID = 1464
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+SSH_CONNECTION = 142.197.125.183 54237 172.31.14.68 22
+# variable set hash-table stats:
+# Load=80/1024=8%, Rehash=0, Collisions=7/115=6%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 51713, inode 10068978): 36 files, no impossibilities.
+
+# 36 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+aws-sdb:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'sdb'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
+
+aws-cloudwatch:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'cloudwatch'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
+
+gh-pages: doc
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 77):
+	git clone `git config --get remote.upstream.url` .gh-pages --reference .
+	git -C .gh-pages checkout --orphan gh-pages
+	git -C .gh-pages reset
+	git -C .gh-pages clean -dxf
+	cp  -r _build/default/_doc/_html/* .gh-pages
+	git -C .gh-pages add .
+	git -C .gh-pages config user.email 'docs@ocaml-aws'
+	git -C .gh-pages commit -m "Update documentation"
+	git -C .gh-pages push origin gh-pages -f
+	rm -rf .gh-pages
+
+aws-autoscaling:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 30):
+	dune exec aws-gen -- -i input/autoscaling/latest/service-2.json -r input/autoscaling/overrides.json -e input/errors.json -o libraries --optional-libs=aws-ec2
+
+aws-sts:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'sts'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-22 16:23:39.486099805
+#  File has been updated.
+#  Successfully updated.
+
+# makefile (from 'Makefile', line 60)
+update-version: VERSION = $(shell cat CHANGES.md | grep -E '^[0-9]' | head -n 1 | cut -f1 -d':' )
+update-version:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 54):
+	@echo "Set version to $(VERSION)"
+	@gsed -i 's/^version: .*/version: "$(VERSION)"/' *.opam
+	# @gsed -i 's/"\(aws-s3[-a-z]*\)"[ ]*{= .*}/"\1" {= "$(VERSION)" }/' *.opam
+	@gsed -i 's/"\(aws-[-a-z]*\)"[ ]*{= .*}/"\1" {= "$(VERSION)" }/' *.opam
+	@gsed -i 's/"\(aws[-a-z]*\)"[ ]*{= .*}/"\1" {= "$(VERSION)" }/' *.opam
+
+aws-ssm:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'ssm'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
+
+uninstall:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 13):
+	dune uninstall
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 16):
+	rm -rf _build *.install
+
+aws-sqs:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'sqs'
+ 
+make: *** No rule to make target 'all'.  Stop.
+
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
+
+aws-ec2:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	dune exec aws-gen -- --is-ec2 -i input/ec2/latest/service-2.json -r input/ec2/overrides.json -e input/errors.json -o libraries
+
+fmt:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	dune build @fmt --auto-promote || echo "format has errors, ignoring"
+
+aws-route53:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'route53'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
+
+aws-cloudtrail:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'cloudtrail'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+doc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 74):
+	dune build @doc
+
+build:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 4):
+	dune build @install
+
+test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 7):
+	dune runtest
+
+endpoints:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 24):
+	dune exec endpoint-gen -- -i input/endpoints.json -o lib
+
+install:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	dune install
+
+aws-elasticache:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'elasticache'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
+
+gen: build aws-ec2 aws-autoscaling aws-cloudformation aws-cloudtrail aws-cloudwatch aws-elasticache aws-elasticloadbalancing aws-rds aws-sdb aws-ssm aws-sts aws-route53 aws-sqs fmt
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+release: update-version
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 62):
+	opam publish
+
+.PHONY: build clean test update-version endpoints aws-cloudformation aws-cloudtrail aws-cloudwatch aws-elasticache aws-elasticloadbalancing aws-rds aws-sdb aws-ssm aws-sts aws-route53 aws-sqs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+aws-cloudformation:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'cloudformation'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
+
+aws-rds:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'rds'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
+
+aws-elasticloadbalancing:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'elasticloadbalancing'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
+
+# files hash-table stats:
+# Load=30/1024=3%, Rehash=0, Collisions=0/93=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 79 / storage = 845 B / avg = 10 B
+# current buf: size = 8162 B / used = 845 B / count = 79 / avg = 10 B
+
+# strcache performance: lookups = 148 / hit rate = 46%
+# hash-table stats:
+# Load=79/8192=1%, Rehash=0, Collisions=0/148=0%
+# Finished Make data base on Mon Aug 22 16:23:57 2022
+
+ 
