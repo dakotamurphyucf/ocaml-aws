@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug 22 16:23:57 2022
+# Make data base, printed on Tue Aug 23 11:08:32 2022
 
 # Variables
 
@@ -17,7 +19,7 @@ FNM_DIR = /home/ubuntu/.fnm
 # environment
 VSCODE_CWD = /home/ubuntu
 # environment
-CAML_LD_LIBRARY_PATH = /home/ubuntu/.opam/mina/lib/stublibs:/home/ubuntu/.opam/mina/lib/ocaml/stublibs:/home/ubuntu/.opam/mina/lib/ocaml
+CAML_LD_LIBRARY_PATH = /home/ubuntu/.opam/default/lib/stublibs:/home/ubuntu/.opam/default/lib/ocaml/stublibs:/home/ubuntu/.opam/default/lib/ocaml
 # default
 MAKE_COMMAND := make
 # environment
@@ -51,6 +53,8 @@ FNM_NODE_DIST_MIRROR = https://nodejs.org/dist
 # makefile
 MAKEFLAGS = pqrR
 # environment
+PKG_CONFIG_PATH = /home/ubuntu/.opam/default/lib/pkgconfig:/home/ubuntu/.opam/default/lib/pkgconfig:
+# environment
 FNM_LOGLEVEL = info
 # makefile
 CURDIR := /home/ubuntu/development/ocaml-aws
@@ -73,7 +77,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-OCAML_TOPLEVEL_PATH = /home/ubuntu/.opam/mina/lib/toplevel
+OCAML_TOPLEVEL_PATH = /home/ubuntu/.opam/default/lib/toplevel
 # environment
 XDG_SESSION_TYPE = tty
 # automatic
@@ -81,7 +85,7 @@ XDG_SESSION_TYPE = tty
 # automatic
 *F = $(notdir $*)
 # environment
-MANPATH = :/home/ubuntu/.opam/mina/man:/home/ubuntu/.opam/mina/man
+MANPATH = :/home/ubuntu/.opam/default/man:/home/ubuntu/.opam/default/man
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
@@ -101,7 +105,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/ubuntu/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/bin/remote-cli:/home/ubuntu/.opam/mina/bin:/run/user/1000/fnm_multishells/1123094_1660709681366/bin:/home/ubuntu/.fnm:/home/ubuntu/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/ubuntu/.opam/mina/bin:/home/ubuntu/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /home/ubuntu/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/bin/remote-cli:/home/ubuntu/.opam/default/bin:/run/user/1000/fnm_multishells/1386738_1661228492232/bin:/home/ubuntu/.fnm:/home/ubuntu/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/ubuntu/.opam/default/bin:/home/ubuntu/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 NIX_SSL_CERT_FILE = /etc/ssl/certs/ca-certificates.crt
 # default
@@ -111,9 +115,9 @@ MOTD_SHOWN = pam
 # automatic
 ^F = $(notdir $^)
 # environment
-SSH_CLIENT = 142.197.125.183 54237 22
+SSH_CLIENT = 174.212.44.52 2080 22
 # environment
-FNM_MULTISHELL_PATH = /run/user/1000/fnm_multishells/1123094_1660709681366
+FNM_MULTISHELL_PATH = /run/user/1000/fnm_multishells/1386738_1661228492232
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # automatic
@@ -139,7 +143,7 @@ MAKE_VERSION := 4.3
 # environment
 NIX_PROFILES = /nix/var/nix/profiles/default /home/ubuntu/.nix-profile
 # environment
-OPAM_SWITCH_PREFIX = /home/ubuntu/.opam/mina
+OPAM_SWITCH_PREFIX = /home/ubuntu/.opam/default
 # environment
 VSCODE_AGENT_FOLDER = /home/ubuntu/.vscode-server
 # environment
@@ -147,11 +151,11 @@ _ = /home/ubuntu/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/nod
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-e3886a17-1992-46bb-b131-10fb617b0cb3.sock
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-13f579e3-8b56-4dbf-bf2b-bc3c9239c0fe.sock
 # environment
 XDG_SESSION_CLASS = user
-# makefile (from 'Makefile', line 33)
-LIBRARIES := aws-cloudformation aws-cloudtrail aws-cloudwatch aws-elasticache aws-elasticloadbalancing aws-rds aws-sdb aws-ssm aws-sts aws-route53 aws-sqs 
+# makefile (from 'Makefile', line 36)
+LIBRARIES := aws-cloudformation aws-cloudtrail aws-cloudwatch aws-elasticache aws-elasticloadbalancing aws-kms aws-rds aws-sdb aws-ssm aws-sts aws-route53 aws-sqs 
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -159,7 +163,7 @@ HOME = /home/ubuntu
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-XDG_SESSION_ID = 1464
+XDG_SESSION_ID = 1627
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -169,9 +173,9 @@ SUFFIXES :=
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
-SSH_CONNECTION = 142.197.125.183 54237 172.31.14.68 22
+SSH_CONNECTION = 174.212.44.52 2080 172.31.14.68 22
 # variable set hash-table stats:
-# Load=80/1024=8%, Rehash=0, Collisions=7/115=6%
+# Load=81/1024=8%, Rehash=0, Collisions=7/116=6%
 
 # Pattern-specific Variable Values
 
@@ -179,9 +183,9 @@ SSH_CONNECTION = 142.197.125.183 54237 172.31.14.68 22
 
 # Directories
 
-# . (device 51713, inode 10068978): 36 files, no impossibilities.
+# . (device 51713, inode 10068978): 39 files, no impossibilities.
 
-# 36 files, no impossibilities in 1 directories.
+# 39 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -195,7 +199,7 @@ aws-sdb:
 #  Implicit/static pattern stem: 'sdb'
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
+#  recipe to execute (from 'Makefile', line 52):
 	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
 
 aws-cloudwatch:
@@ -204,14 +208,14 @@ aws-cloudwatch:
 #  Implicit/static pattern stem: 'cloudwatch'
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
+#  recipe to execute (from 'Makefile', line 52):
 	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
 
 gh-pages: doc
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 77):
+#  recipe to execute (from 'Makefile', line 81):
 	git clone `git config --get remote.upstream.url` .gh-pages --reference .
 	git -C .gh-pages checkout --orphan gh-pages
 	git -C .gh-pages reset
@@ -236,17 +240,17 @@ aws-sts:
 #  Implicit/static pattern stem: 'sts'
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
+#  recipe to execute (from 'Makefile', line 52):
 	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-22 16:23:39.486099805
+#  Last modified 2022-08-22 18:35:44.844127951
 #  File has been updated.
 #  Successfully updated.
 
-# makefile (from 'Makefile', line 60)
+# makefile (from 'Makefile', line 64)
 update-version: VERSION = $(shell cat CHANGES.md | grep -E '^[0-9]' | head -n 1 | cut -f1 -d':' )
 update-version:
 #  Phony target (prerequisite of .PHONY).
@@ -255,7 +259,7 @@ update-version:
 #  File has not been updated.
 # variable set hash-table stats:
 # Load=1/32=3%, Rehash=0, Collisions=0/3=0%
-#  recipe to execute (from 'Makefile', line 54):
+#  recipe to execute (from 'Makefile', line 58):
 	@echo "Set version to $(VERSION)"
 	@gsed -i 's/^version: .*/version: "$(VERSION)"/' *.opam
 	# @gsed -i 's/"\(aws-s3[-a-z]*\)"[ ]*{= .*}/"\1" {= "$(VERSION)" }/' *.opam
@@ -268,7 +272,7 @@ aws-ssm:
 #  Implicit/static pattern stem: 'ssm'
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
+#  recipe to execute (from 'Makefile', line 52):
 	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
 
 uninstall:
@@ -286,16 +290,14 @@ clean:
 #  recipe to execute (from 'Makefile', line 16):
 	rm -rf _build *.install
 
+ 
 aws-sqs:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: 'sqs'
- 
-make: *** No rule to make target 'all'.  Stop.
-
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
+#  recipe to execute (from 'Makefile', line 52):
 	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
 
 aws-ec2:
@@ -318,7 +320,7 @@ aws-route53:
 #  Implicit/static pattern stem: 'route53'
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
+#  recipe to execute (from 'Makefile', line 52):
 	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
 
 aws-cloudtrail:
@@ -327,7 +329,7 @@ aws-cloudtrail:
 #  Implicit/static pattern stem: 'cloudtrail'
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
+#  recipe to execute (from 'Makefile', line 52):
 	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
 
 # Not a target:
@@ -347,7 +349,7 @@ doc:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 74):
+#  recipe to execute (from 'Makefile', line 78):
 	dune build @doc
 
 build:
@@ -374,6 +376,22 @@ endpoints:
 #  recipe to execute (from 'Makefile', line 24):
 	dune exec endpoint-gen -- -i input/endpoints.json -o lib
 
+aws-kms:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'kms'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 52):
+	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
+
+aws-sns:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 33):
+	dune exec aws-gen -i input/sns/2010-03-31/service-2.json -r input/sns/overrides.json -e input/errors.json -o libraries
+
 install:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -387,10 +405,10 @@ aws-elasticache:
 #  Implicit/static pattern stem: 'elasticache'
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
+#  recipe to execute (from 'Makefile', line 52):
 	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
 
-gen: build aws-ec2 aws-autoscaling aws-cloudformation aws-cloudtrail aws-cloudwatch aws-elasticache aws-elasticloadbalancing aws-rds aws-sdb aws-ssm aws-sts aws-route53 aws-sqs fmt
+gen: build aws-ec2 aws-autoscaling aws-sns aws-cloudformation aws-cloudtrail aws-cloudwatch aws-elasticache aws-elasticloadbalancing aws-kms aws-rds aws-sdb aws-ssm aws-sts aws-route53 aws-sqs fmt
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -399,10 +417,10 @@ release: update-version
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 62):
+#  recipe to execute (from 'Makefile', line 66):
 	opam publish
 
-.PHONY: build clean test update-version endpoints aws-cloudformation aws-cloudtrail aws-cloudwatch aws-elasticache aws-elasticloadbalancing aws-rds aws-sdb aws-ssm aws-sts aws-route53 aws-sqs
+.PHONY: build clean test update-version endpoints aws-cloudformation aws-cloudtrail aws-cloudwatch aws-elasticache aws-elasticloadbalancing aws-kms aws-rds aws-sdb aws-ssm aws-sts aws-route53 aws-sqs
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -413,7 +431,7 @@ aws-cloudformation:
 #  Implicit/static pattern stem: 'cloudformation'
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
+#  recipe to execute (from 'Makefile', line 52):
 	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
 
 aws-rds:
@@ -422,7 +440,7 @@ aws-rds:
 #  Implicit/static pattern stem: 'rds'
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
+#  recipe to execute (from 'Makefile', line 52):
 	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
 
 aws-elasticloadbalancing:
@@ -431,23 +449,24 @@ aws-elasticloadbalancing:
 #  Implicit/static pattern stem: 'elasticloadbalancing'
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
+#  recipe to execute (from 'Makefile', line 52):
 	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
 
 # files hash-table stats:
-# Load=30/1024=3%, Rehash=0, Collisions=0/93=0%
+# Load=32/1024=3%, Rehash=0, Collisions=0/99=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 79 / storage = 845 B / avg = 10 B
-# current buf: size = 8162 B / used = 845 B / count = 79 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 85 / storage = 898 B / avg = 10 B
+# current buf: size = 8162 B / used = 898 B / count = 85 / avg = 10 B
 
-# strcache performance: lookups = 148 / hit rate = 46%
+# strcache performance: lookups = 159 / hit rate = 46%
+ 
 # hash-table stats:
-# Load=79/8192=1%, Rehash=0, Collisions=0/148=0%
-# Finished Make data base on Mon Aug 22 16:23:57 2022
+# Load=85/8192=1%, Rehash=0, Collisions=0/159=0%
+# Finished Make data base on Tue Aug 23 11:08:32 2022
 
  

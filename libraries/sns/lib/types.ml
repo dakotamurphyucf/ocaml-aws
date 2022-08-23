@@ -1829,15 +1829,17 @@ module PublishInput =
       topic_arn: String.t option ;
       target_arn: String.t option ;
       message: String.t ;
+      message_group_id: String.t option;
       subject: String.t option ;
       message_structure: String.t option ;
       message_attributes: MessageAttributeMap.t option }
-    let make ?topic_arn  ?target_arn  ~message  ?subject  ?message_structure 
+    let make ?topic_arn  ?target_arn  ~message  ?message_group_id ?subject  ?message_structure 
       ?message_attributes  () =
       {
         topic_arn;
         target_arn;
         message;
+        message_group_id;
         subject;
         message_structure;
         message_attributes
@@ -1855,6 +1857,9 @@ module PublishInput =
             (Aws.Xml.required "Message"
                (Aws.Util.option_bind (Aws.Xml.member "Message" xml)
                   String.parse));
+          message_group_id =
+              (Aws.Util.option_bind (Aws.Xml.member "MessageGroupId" xml)
+               String.parse);
           subject =
             (Aws.Util.option_bind (Aws.Xml.member "Subject" xml) String.parse);
           message_structure =
@@ -1877,6 +1882,8 @@ module PublishInput =
            Aws.Util.option_map v.subject
              (fun f -> Aws.Query.Pair ("Subject", (String.to_query f)));
            Some (Aws.Query.Pair ("Message", (String.to_query v.message)));
+            Aws.Util.option_map v.message_group_id
+             (fun f -> Aws.Query.Pair ("MessageGroupId", (String.to_query f)));
            Aws.Util.option_map v.target_arn
              (fun f -> Aws.Query.Pair ("TargetArn", (String.to_query f)));
            Aws.Util.option_map v.topic_arn
@@ -1892,6 +1899,8 @@ module PublishInput =
            Aws.Util.option_map v.subject
              (fun f -> ("Subject", (String.to_json f)));
            Some ("Message", (String.to_json v.message));
+           Aws.Util.option_map v.message_group_id
+             (fun f -> ("MessageGroupId", (String.to_json f)));
            Aws.Util.option_map v.target_arn
              (fun f -> ("TargetArn", (String.to_json f)));
            Aws.Util.option_map v.topic_arn
@@ -1905,6 +1914,8 @@ module PublishInput =
         message =
           (String.of_json
              (Aws.Util.of_option_exn (Aws.Json.lookup j "Message")));
+         message_group_id =
+          (Aws.Util.option_map (Aws.Json.lookup j "MessageGroupId") String.of_json);
         subject =
           (Aws.Util.option_map (Aws.Json.lookup j "Subject") String.of_json);
         message_structure =
