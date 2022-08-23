@@ -102,17 +102,26 @@ module Json = struct
     let open Yojson.Basic.Util in
     let original = to_assoc original in
     let overrides = to_assoc overrides in
-    `Assoc
-      (List.map
-         (fun (key, val_) ->
-           if key = "shapes"
-           then
-             let types =
-               try to_assoc (List.assoc "typeOverrides" overrides) with _ -> []
-             in
-             key, `Assoc (override_shapes (to_assoc val_) types)
-           else key, val_)
-         original)
+    let overriden =
+      `Assoc
+        (List.map
+           (fun (key, val_) ->
+             if key = "shapes"
+             then
+               let types =
+                 try to_assoc (List.assoc "typeOverrides" overrides) with _ -> []
+               in
+               key, `Assoc (override_shapes (to_assoc val_) types)
+             else key, val_)
+           original)
+    in
+    let overriden =
+      let additional_values =
+        `Assoc (try to_assoc (List.assoc "additionalValues" overrides) with _ -> [])
+      in
+      merge overriden additional_values
+    in
+    overriden
 end
 
 let log s = Printf.eprintf (s ^^ "\n%!")
@@ -287,14 +296,14 @@ module CommandLine = struct
     Arg.(value & (type_ @@ info ~docv:"Filename" [ "optional-libs" ] ~doc))
 
   let gen_t =
-    Term.(pure main $ input $ override $ errors $ outdir $ is_ec2 $ optional_libs)
+    Term.(const main $ input $ override $ errors $ outdir $ is_ec2 $ optional_libs)
 
   let info =
     let doc = "Generate a library for an AWS schema." in
-    Term.info "aws_gen" ~version:"0.0.1" ~doc
+    Cmd.info "aws_gen" ~version:"0.0.1" ~doc
 end
 
 let () =
-  match Term.eval CommandLine.(gen_t, info) with
-  | `Error _ -> exit 1
+  match Cmd.eval_value CommandLine.(Cmd.v info gen_t) with
+  | Error _ -> exit 1
   | _ -> exit 0

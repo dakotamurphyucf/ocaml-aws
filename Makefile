@@ -29,6 +29,9 @@ aws-ec2:
 aws-autoscaling:
 	dune exec aws-gen -- -i input/autoscaling/latest/service-2.json -r input/autoscaling/overrides.json -e input/errors.json -o libraries --optional-libs=aws-ec2
 
+aws-sns:
+	dune exec aws-gen -i input/sns/2010-03-31/service-2.json -r input/sns/overrides.json -e input/errors.json -o libraries
+
 # NOTE: This does not include aws-ec2, which is special-cased.
 LIBRARIES := \
 	aws-cloudformation \
@@ -36,6 +39,7 @@ LIBRARIES := \
 	aws-cloudwatch \
 	aws-elasticache \
 	aws-elasticloadbalancing \
+	aws-kms \
 	aws-rds \
 	aws-sdb \
 	aws-ssm \
@@ -47,7 +51,7 @@ LIBRARIES := \
 $(LIBRARIES): aws-%:
 	dune exec aws-gen -- -i input/$*/latest/service-2.json -r input/$*/overrides.json -e input/errors.json -o libraries
 
-gen: build aws-ec2 aws-autoscaling $(LIBRARIES) fmt
+gen: build aws-ec2 aws-autoscaling aws-sns $(LIBRARIES) fmt
 
 update-version: VERSION=$(shell cat CHANGES.md | grep -E '^[0-9]' | head -n 1 | cut -f1 -d':' )
 update-version:
