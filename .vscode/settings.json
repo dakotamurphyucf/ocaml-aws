@@ -2,6 +2,6 @@
     "makefile.extensionOutputFolder": "./.vscode",
     "ocaml.sandbox": {
         "kind": "opam",
-        "switch": "default"
+        "switch": "/home/ubuntu/development/tezos-blockchain-service"
     }
 }

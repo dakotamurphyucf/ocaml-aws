@@ -677,7 +677,31 @@ module MessageSystemAttributeMap =
   struct
     type t = (MessageSystemAttributeName.t, String.t) Hashtbl.t
     let make elems () = elems
-    let parse xml = None
+
+    let parse xml =
+      let to_hashtbl m =
+        List.fold_left
+          (fun acc (k, v) ->
+            Hashtbl.add acc (MessageSystemAttributeName.of_string k) v;
+            acc)
+          (Hashtbl.create (List.length m))
+          m
+      in
+      try
+        Some
+          (to_hashtbl
+          @@ List.map
+              (fun xml ->
+                ( Aws.Util.of_option_exn
+                  @@ String.parse
+                  @@ Aws.Util.of_option_exn (Aws.Xml.member "Name" xml)
+                , Aws.Util.of_option_exn
+                  @@ String.parse
+                  @@ Aws.Util.of_option_exn (Aws.Xml.member "Value" xml) ))
+              xml)
+      with
+      | _ -> None
+        
     let to_query v =
       Aws.Query.to_query_hashtbl MessageSystemAttributeName.to_string
         String.to_query v
@@ -836,8 +860,7 @@ module Message =
           body =
             (Aws.Util.option_bind (Aws.Xml.member "Body" xml) String.parse);
           attributes =
-            (Aws.Util.option_bind (Aws.Xml.member "Attribute" xml)
-               MessageSystemAttributeMap.parse);
+             MessageSystemAttributeMap.parse (Aws.Xml.members "Attribute" xml);
           m_d5_of_message_attributes =
             (Aws.Util.option_bind
                (Aws.Xml.member "MD5OfMessageAttributes" xml) String.parse);
